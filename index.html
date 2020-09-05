@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tổng 20 số đầu tiên fibonacci</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var n;
+            var f0=0, f1=1, fn;
+            tong=0;
+            document.write(f0,"</br>",f1);
+            n = parseInt(prompt("Nhập số phần tử n: "));
+                for(var i=0;i<n-2;i++){
+                    fn=f0+f1;
+                    f0=f1;
+                    f1=fn;
+                    tong=tong+fn;
+                document.write("</br>",fn);
+            }
+            document.write("</br>Tổng 20 số đầu tiên trong dãy fibonacci là: ",tong);
+        </script>
+    </body>
+</html>
